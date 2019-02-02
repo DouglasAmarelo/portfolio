@@ -1,0 +1,57 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet';
+
+import Header from './header'
+// import './layout.css'
+import '../styles/index.scss'
+import Footer from './footer';
+
+const Layout = ({ children }) => (
+	<StaticQuery
+		query={graphql`
+			query SiteTitleQuery {
+				site {
+					siteMetadata {
+						title
+					}
+				}
+			}
+		`}
+		render={data => (
+			<>
+				<Helmet
+					title={data.site.siteMetadata.title}
+					meta={[
+						{
+							name: 'description',
+							content: 'Front-end developer'
+						},
+						{
+							name: 'keywords',
+							content: 'Front-end, javaScript, css, html'
+						}
+					]}
+				>
+					<html lang="pt-br" />
+					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous" />
+					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous" />
+				</Helmet>
+				<Header siteTitle={data.site.siteMetadata.title} />
+
+				<div>
+					{children}
+				</div>
+
+				<Footer />
+			</>
+		)}
+	/>
+)
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
