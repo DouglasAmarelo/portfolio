@@ -2,10 +2,15 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types'
 import React, { Component } from 'react';
 
+const navbarlinks = [
+	{ title: 'Home', link: '/' },
+	{ title: 'Projects', link: '/projects' },
+	{ title: '', link: '' },
+];
+
 class Header extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			isMenuOpen : false
 		};
@@ -26,7 +31,7 @@ class Header extends Component {
 			<nav className="navbar" role="navigation" aria-label="main navigation">
 				<div className="container">
 					<div className="navbar-brand">
-						<Link to="/" className="navbar-item is-size-4">
+						<Link to="/" className="navbar-item">
 							{siteTitle}
 						</Link>
 
@@ -41,9 +46,21 @@ class Header extends Component {
 							<span aria-hidden="true"></span>
 						</button>
 					</div>
+
 					<div className={`navbar-menu ${burgerClass}`}>
 						<div className="navbar-end">
-							<Link to="/">Home</Link>
+							{
+								navbarlinks.map(navbarItem => (
+									<Link
+										className="navbar-item"
+										to={navbarItem.link}
+										key={navbarItem.title}
+										aria-label={navbarItem.title}
+									>
+										{navbarItem.title}
+									</Link>
+								))
+							}
 						</div>
 					</div>
 				</div>
