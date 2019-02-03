@@ -46,7 +46,19 @@ const SecondPage = () => (
 			<div className="hero-body">
 				<div className="container has-text-centered">
 					<h1 className="title">Projetos</h1>
-					<p className="content">Alguns dos meus projetos de destaque. Veja mais no meu <a href="https://github.com/DouglasAmarelo" target="_blank" rel="noopener noreferrer">Github</a></p>
+					<p className="content">
+						Alguns dos meus projetos de destaque. Veja mais no meu&nbsp;
+						<a
+							style={{
+								textDecoration: 'underline'
+							}}
+							href="https://github.com/DouglasAmarelo"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Github
+						</a>
+					</p>
 				</div>
 			</div>
 		</section>

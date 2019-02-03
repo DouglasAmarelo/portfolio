@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import profileImage from '../assets/douglas-lopes-front-end-developer.jpg';
 
@@ -60,7 +60,7 @@ const IndexPage = (data) => (
 				<p>Nos projetos que participei, consegui usar e aprender tecnologias como Sass, Less, Bootstrap, JavaScript, Dust, React e jQuery. Grunt, Gulp e Webpack para automação dos processos de desenvolvimento. Para versionamento dos projetos já trabalhei com TortoiseSVN e Github.</p>
 				<p>Tudo isso com códigos semânticos, modulares, performáticos, dentro das especificações da W3C e otimizados para SEO.</p>
 
-				<p>Veja meus <Link to="/projetos">projetos pessoais</Link></p>
+				{/* <p>Veja meus <Link to="/projetos">projetos pessoais</Link></p> */}
 			</div>
 		</section>
 	</Layout>
