@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 
 const navbarlinks = [
 	{ title: 'Home', link: '/' },
-	{ title: 'Projects', link: '/projects' },
-	{ title: '', link: '' },
+	{ title: 'Projetos', link: '/projetos' },
+	{ title: 'Posts', link: '/posts' },
 ];
 
 class Header extends Component {
@@ -67,8 +67,7 @@ class Header extends Component {
 			</nav>
 		);
 	}
-}
-
+};
 
 Header.propTypes = {
 	siteTitle: PropTypes.string,
@@ -78,4 +77,4 @@ Header.defaultProps = {
 	siteTitle: ``,
 }
 
-export default Header
+export default Header;

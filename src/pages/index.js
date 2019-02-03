@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
 import profileImage from '../assets/douglas-lopes-front-end-developer.jpg';
 
@@ -20,8 +19,8 @@ const IndexPage = (data) => (
 					<figure className="image is-128x128 photo">
 						<img className="is-rounded" src={profileImage} alt="Douglas Lopes" />
 					</figure>
-					<h1 className="title is-size-4">Douglas "Amarelo" Lopes</h1>
-					<h2 className="subtitle is-size-6">Front-end developer</h2>
+					<h1 className="title">Douglas "Amarelo" Lopes</h1>
+					<h2 className="subtitle">Front-end developer</h2>
 
 					<div className="socialMedias">
 						{
@@ -45,9 +44,9 @@ const IndexPage = (data) => (
 			</div>
 		</section>
 
-		<section className="section is-size-6-desktop is-size-6-touch">
-			<div className="container content">
-				<h1 className="title is-size-4">Olá, eu sou o Douglas Lopes <span role="img" aria-label="aceno">👋</span></h1>
+		<section className="section">
+			<div className="container content home-content">
+				<h1 className="title is-spaced">Olá, eu sou o Douglas Lopes <span className="is-size-5" role="img" aria-label="aceno">👋</span></h1>
 				<p>Sou programador voltado ao desenvolvimento <strong>front-end</strong> e trabalho desde 2010 na área.</p>
 				<p>Sonho em construir produtos capazes de afetar a vida de milhares de pessoas ao redor do mundo.</p>
 
@@ -61,10 +60,10 @@ const IndexPage = (data) => (
 				<p>Nos projetos que participei, consegui usar e aprender tecnologias como Sass, Less, Bootstrap, JavaScript, Dust, React e jQuery. Grunt, Gulp e Webpack para automação dos processos de desenvolvimento. Para versionamento dos projetos já trabalhei com TortoiseSVN e Github.</p>
 				<p>Tudo isso com códigos semânticos, modulares, performáticos, dentro das especificações da W3C e otimizados para SEO.</p>
 
-				<p>Veja meus <Link to="/projects">projetos pessoais</Link></p>
+				<p>Veja meus <Link to="/projetos">projetos pessoais</Link></p>
 			</div>
 		</section>
 	</Layout>
 );
 
-export default IndexPage
+export default IndexPage;
