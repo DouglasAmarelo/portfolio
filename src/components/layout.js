@@ -38,6 +38,7 @@ const Layout = ({ children }) => (
 					<html lang="pt-br" />
 					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous" />
 					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous" />
+					<meta name="google-site-verification" content="YD5y4cRKEvX2ZN4nL9pVmYXWNAK3TR0Z5341d1k9OEM" />
 				</Helmet>
 				{/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
