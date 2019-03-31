@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 
-// import Header from './header'
+import Header from './header'
 // import './layout.css'
 import '../styles/index.scss'
 import Footer from './footer';
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous" />
 					<meta name="google-site-verification" content="YD5y4cRKEvX2ZN4nL9pVmYXWNAK3TR0Z5341d1k9OEM" />
 				</Helmet>
-				{/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+				<Header siteTitle={data.site.siteMetadata.title} />
 
 				<div>
 					{children}

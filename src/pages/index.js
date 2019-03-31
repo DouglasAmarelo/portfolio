@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import profileImage from '../assets/douglas-lopes-front-end-developer.jpg';
+import { Link } from 'gatsby';
 
 const socialMedias  = [
 	{ icon: 'fa-linkedin', title: 'LinkedIn', link: 'https://www.linkedin.com/in/douglasamarelo/' },
@@ -23,6 +23,7 @@ const IndexPage = (data) => (
 					<h2 className="subtitle">Front-end developer</h2>
 
 					<div className="socialMedias">
+					{console.log('data', data)}
 						{
 							socialMedias.map(socialMedia => (
 								<a
@@ -54,11 +55,13 @@ const IndexPage = (data) => (
 
 				<p>Desde 2013 recebi a oportunidade de assumir um cargo de gestão, onde cresci e desenvolvi as minhas habilidades no gerenciamento de projetos e pessoas.</p>
 
-				<p>Nessa função, coordenei e supervisionei uma equipe de 20 colaboradores tendo como atividades principais a criação do escopo do projeto, análise e estimativa de tempo de implementação, controle e distribuição das tarefas entre os membros da equipe, etc. Ainda nessa função, liderei todo o processo de contratação de novos colaboradores, desde a busca de candidatos, passando pela a etapa de entrevista e testes, até a contratação.</p>
+				<p>Nessa função, coordenei e supervisionei uma equipe de 40 colaboradores tendo como atividades principais a criação do escopo do projeto, análise e estimativa de tempo de implementação, controle e distribuição das tarefas entre os membros da equipe, etc. Ainda nessa função, liderei todo o processo de contratação de novos colaboradores, desde a busca de candidatos, passando pela a etapa de entrevista e testes, até a contratação.</p>
 				<p>Após isso, fiz o acompanhamento e elaboração de plano de evolução e crescimento dos colaboradores dentro da equipe, visando os objetivos da empresa e do time do qual fui responsável.</p>
 
-				<p>Nos projetos que participei, consegui usar e aprender tecnologias como Sass, Less, Bootstrap, JavaScript, Dust, React e jQuery. Grunt, Gulp e Webpack para automação dos processos de desenvolvimento. Para versionamento dos projetos já trabalhei com TortoiseSVN e Github.</p>
+				<p>Nos projetos que participei, consegui usar e aprender tecnologias como Sass, Less, Bootstrap, JavaScript, Dust, React e jQuery. Grunt, Gulp e Webpack para automação dos processos de desenvolvimento. Para versionamento dos projetos já trabalhei com TortoiseSVN e Git (GitHub e BitBucket).</p>
 				<p>Tudo isso com códigos semânticos, modulares, performáticos, dentro das especificações da W3C e otimizados para SEO.</p>
+
+				<p>Deixei a minha <Link to="/stack">stack de desenvolvimento</Link> atual disponível, para você olhar.</p>
 
 				{/* <p>Veja meus <Link to="/projetos">projetos pessoais</Link></p> */}
 			</div>

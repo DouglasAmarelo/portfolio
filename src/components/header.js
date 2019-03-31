@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 
 const navbarlinks = [
 	{ title: 'Home', link: '/' },
-	{ title: 'Projetos', link: '/projetos' },
-	{ title: 'Posts', link: '/posts' },
+	// { title: 'Projetos', link: '/projetos' },
+	// { title: 'Posts', link: '/posts' },
 	{ title: 'Stack', link: '/stack' },
 ];
 
