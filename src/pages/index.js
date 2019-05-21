@@ -3,6 +3,8 @@ import Layout from '../components/layout';
 import profileImage from '../assets/douglas-lopes-front-end-developer.jpg';
 import { Link } from 'gatsby';
 
+import '../components/hero.scss';
+
 const socialMedias  = [
 	{ icon: 'fa-linkedin', title: 'LinkedIn', link: 'https://www.linkedin.com/in/douglasamarelo/' },
 	{ icon: 'fa-github', title: 'GitHub', link: 'https://github.com/DouglasAmarelo' },
@@ -13,7 +15,7 @@ const socialMedias  = [
 
 const IndexPage = (data) => (
 	<Layout>
-		<section className="hero is-dark is-medium is-bold is-size-6">
+		<section className="hero hero-header is-dark is-medium is-size-6">
 			<div className="hero-body">
 				<div className="container has-text-centered">
 					<figure className="image is-128x128 photo">

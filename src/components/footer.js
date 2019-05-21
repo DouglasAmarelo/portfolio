@@ -1,12 +1,8 @@
 import React from 'react';
+import '../components/footer.scss';
 
 const Footer = () => (
-	<footer
-		className="hero is-dark"
-		style={{
-			padding: '1.5rem 0'
-		}}
-	>
+	<footer className="footer hero is-dark">
 		<div className="has-text-centered">
 			<p>
 				Built with&nbsp;

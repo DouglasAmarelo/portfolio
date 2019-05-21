@@ -1,0 +1,16 @@
+.hero:not(.footer) {
+	background: url('../assets/4k-wallpaper-architecture-background-1308624-1900x860.jpg') center center no-repeat!important;
+	background-size: cover!important;
+	position: relative;
+
+	&:before {
+		background-color: #000;
+		content: '';
+		height: 100%;
+		opacity: .55;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+}
