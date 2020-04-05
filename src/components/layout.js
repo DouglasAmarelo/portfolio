@@ -75,6 +75,8 @@ const Layout = ({ children }) => (
             content="Sou desenvolvimento front-end desde 2010. Já participei de grandes projetos para clientes como, Whirlpool Brasil e Whirlpool Latam (Brastemp, Consul, Compra Certa, KitchenAid e Whirlpool), Sony, Itaú, Honda, Microsoft, Ambev, B.blend, Amazon, Terra, Editora Globo, Banco do Brasil, Contém 1g, L'Occitane entre muitos outros."
           />
           <meta property="og:image" content="/douglasamarelo.com.png" />
+          <meta property="og:image:width" content="904" />
+          <meta property="og:image:height" content="545" />
 
           {/* Twitter */}
           <meta property="twitter:card" content="summary_large_image" />
@@ -88,6 +90,8 @@ const Layout = ({ children }) => (
             content="Sou desenvolvimento front-end desde 2010. Já participei de grandes projetos para clientes como, Whirlpool Brasil e Whirlpool Latam (Brastemp, Consul, Compra Certa, KitchenAid e Whirlpool), Sony, Itaú, Honda, Microsoft, Ambev, B.blend, Amazon, Terra, Editora Globo, Banco do Brasil, Contém 1g, L'Occitane entre muitos outros."
           />
           <meta property="twitter:image" content="/douglasamarelo.com.png" />
+          <meta property="og:image:width" content="904" />
+          <meta property="og:image:height" content="545" />
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
