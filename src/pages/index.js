@@ -49,7 +49,6 @@ const IndexPage = (data) => (
           <h2 className="subtitle">Front-end developer</h2>
 
           <div className="socialMedias">
-            {console.log('data', data)}
             {socialMedias.map((socialMedia) => (
               <a
                 href={socialMedia.link}

@@ -3,7 +3,7 @@ module.exports = {
     title: `Douglas 'Amarelo' Lopes | Front-end developer`,
     description: `Sou desenvolvimento front-end desde 2010. Já participei de grandes projetos para clientes como, Whirlpool Brasil e Whirlpool Latam (Brastemp, Consul, Compra Certa, KitchenAid e Whirlpool), Sony, Itaú, Honda, Microsoft, Ambev, B.blend, Amazon, Terra, Editora Globo, Banco do Brasil, Contém 1g, L'Occitane entre muitos outros.`,
     author: `@DouglasAmarelo`,
-    image: `/images/douglasamarelo.com.png`,
+    image: `/douglasamarelo.com.png`,
     twitterUsername: `@DouglasAmarelo`,
   },
   plugins: [
