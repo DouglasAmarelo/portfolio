@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8c71fc70-d9f4-40b1-bb93-fc92d3b51ffa/deploy-status)](https://app.netlify.com/sites/portfolio-douglas/deploys)
+
+
 # Portfólio
 This project is my portfólio and it was developed using [Gatsby](https://www.gatsbyjs.org) and deployed using [Netlify](https://www.netlify.com/)
 
